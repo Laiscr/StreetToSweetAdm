@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "Biju",
+    "age": "2 anos",
+    "size": "Médio",
+    "gender": "female",
+    "isVaccinated": true,
+    "isNeutered": true,
+    "image": "../../imagens/animal-adocao1.webp",
+    "temperament": "Dócil e amigável"
+  },
+  {
+    "id": 2,
+    "name": "Thor",
+    "age": "1 ano",
+    "size": "Grande",
+    "gender": "male",
+    "isVaccinated": true,
+    "isNeutered": false,
+    "image": "../../imagens/animal-adocao1.webp",
+    "temperament": "Brincalhão e ativo"
+  },
+  {
+    "id": 3,
+    "name": "Luna",
+    "age": "3 anos",
+    "size": "Pequeno",
+    "gender": "female",
+    "isVaccinated": false,
+    "isNeutered": true,
+    "image": "../../imagens/animal-adocao1.webp",
+    "temperament": "Calma e carinhosa"
+  },
+  {
+    "id": 4,
+    "name": "Max",
+    "age": "5 meses",
+    "size": "Pequeno",
+    "gender": "male",
+    "isVaccinated": false,
+    "isNeutered": false,
+    "image": "../../imagens/animal-adocao1.webp",
+    "temperament": "Curioso e medroso"
+  }
+]

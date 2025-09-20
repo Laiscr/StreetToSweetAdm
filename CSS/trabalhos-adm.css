@@ -1,0 +1,74 @@
+/* Container principal dos cards de notícia */
+.news-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilo individual de cada card de notícia */
+.news-card {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit; /* Herda a cor do texto do body */
+  height: 160px;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.news-card img {
+  width: 240px;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Conteúdo de texto do card */
+.news-text-content {
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Data da notícia */
+.news-date {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Título da notícia */
+.news-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1f7a8c;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+
+/* Resumo da notícia */
+.news-summary {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+  line-height: 1.4;
+  /* Limita o texto a 2 linhas para não quebrar o layout */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* versão para navegadores antigos */
+  line-clamp: 2; /* versão para navegadores mais modernos; faz com que a notícia não ultrapasse 2 linhas no card (p/ manter padrão) e, se ultrapassar, serão adicionados "..." ao final */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

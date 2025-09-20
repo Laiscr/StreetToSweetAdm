@@ -1,0 +1,85 @@
+/* Container principal das campanhas */
+.campaigns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  padding: 40px 20px;
+}
+
+/* Wrapper para cada item de campanha (poster + ano + botão) */
+.campaign-item {
+  position: relative; /* para posicionar o ano */
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* card com a imagem */
+.campaign-item .card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+
+.campaign-item .card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Tag com o ano da campanha */
+.campaign-year {
+  position: absolute;
+  top: -15px; /* Puxa para cima, para fora do card */
+  right: -15px; /* Puxa para a direita, para fora do card */
+  background-color: #1f7a8c;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* Garante que fique sobre outros elementos se houver sobreposição */
+}
+
+/* Botão de status (estilo base) */
+.campaign-status {
+  display: inline-block;
+  width: 45%;
+  margin-top: 20px;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Estilo para campanha "Em andamento" (clicável) */
+.status-ongoing {
+  background-color: #1f7a8c; /* Azul principal */
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.status-ongoing:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo para campanha "Encerrada" (não clicável) */
+.status-closed {
+  background-color: #b30000;
+  color: white;
+  cursor: not-allowed;
+  pointer-events: none; /* Desabilita eventos de mouse */
+}
